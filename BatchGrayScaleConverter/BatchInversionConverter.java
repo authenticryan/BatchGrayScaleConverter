@@ -2,8 +2,8 @@
 /**
  * Write a description of BatchInversionConverter here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Ryan Dsouza 
+ * @version 1.0 - Final Sign off - free of defects for small images. Thread handling required for large images
  */
 
 import edu.duke.*;
