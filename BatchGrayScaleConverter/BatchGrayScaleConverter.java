@@ -8,7 +8,6 @@
 
 import edu.duke.*;
 import java.io.File;
-import java.util.concurrent.TimeUnit;
 
 public class BatchGrayScaleConverter {  
     public void processBatchFiles() {
@@ -27,12 +26,11 @@ public class BatchGrayScaleConverter {
         for(Pixel blankPixel : grayScaleImage.pixels()){
             Pixel colorPixel = colorImage.getPixel(blankPixel.getX(), blankPixel.getY());
             int averageColor = (colorPixel.getRed() + colorPixel.getBlue() + colorPixel.getGreen()) / 3;
-            
+
             blankPixel.setRed(averageColor);
             blankPixel.setGreen(averageColor);
             blankPixel.setBlue(averageColor);
         }
         return grayScaleImage;
     }
-
 }
